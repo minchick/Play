@@ -42,9 +42,10 @@ public class Cardss {
     }
 
     public final Color color() { //возвращает цвет карты в зависимости открыта или закрыта и масти
+        Color color1 = new Color(153,0,0);
         if (faceUp())
             if (suit() == heart || suit() == diamond)
-                return Color.red;
+                return color1;
             else
                 return Color.black;
         return Color.green;
