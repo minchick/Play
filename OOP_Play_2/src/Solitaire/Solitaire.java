@@ -57,8 +57,10 @@ public class Solitaire {
             }
         }
         public SolitaireFrame() {
-            setSize(700, 400);
-            setTitle("Пасьянс");
+            Color color = new Color(79,121,66);
+            setSize(700, 700);
+            setTitle("Пасьянс/Solitaire");
+            setBackground(color);
             addWindowListener(new WindowAdapter(){
                 public void windowClosing(WindowEvent we){
                     System.exit(0);
@@ -66,6 +68,7 @@ public class Solitaire {
             });
             addMouseListener (new MouseKeeper());
             Button restartButton = new Button("Заново");
+            restartButton.setPreferredSize(new Dimension(50,50));
             restartButton.addActionListener(new RestartButtonListener());
             add(restartButton, BorderLayout.SOUTH);
         }
