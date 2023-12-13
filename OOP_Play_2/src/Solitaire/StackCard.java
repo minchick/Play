@@ -42,7 +42,7 @@ public class StackCard {
     }
 
     public void display (Graphics g) { //Отображает колоду, если колода пуста, отображается прямоугольник, иначе, отображается верхняя карта с помощью метода draw()
-        g.setColor(Color.blue);
+        g.setColor(Color.white);
         if (isEmpty())
             g.drawRect(x, y, Cardss.width, Cardss.height);
         else
